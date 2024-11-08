@@ -1,24 +1,11 @@
-#include <stdio.h>
-
-int main() {
-    // Declare and initialize a 3D array to represent two 2D arrays
-    int scores[2][2][2] = {
-        {{65, 92}, {84, 72}},  // First set
-        {{35, 70}, {59, 67}}   // Second set
-    };
-
-    // Display the 3D array values
-    printf("Scores:\n");
-    for (int i = 0; i < 2; i++) {
-        printf("Set %d:\n", i + 1);
-        for (int j = 0; j < 2; j++) {
-            for (int k = 0; k < 2; k++) {
-                printf("%d ", scores[i][j][k]);
-            }
-            printf("\n");
+#include<stdio.h>
+int main () {
+    int x,z;
+    int scores[4][2]={{65,92},{84,72},{35,70},{59,67}};
+    for(x=0;x<4;x++){
+        for(z=0;z<2;z++){
+            printf("scores[%d][%d]=%d\n",x,z,scores[x][z]);
         }
-        printf("\n");
     }
-
     return 0;
 }
